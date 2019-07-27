@@ -1,6 +1,20 @@
+<<<<<<< HEAD
 .row1 {
   display: flex;
   flex-direction: row;
   width: 50%;
   height: 400px;
+=======
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tiles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+>>>>>>> a2e81edbf7a93003c8808585431b5d07bc7943d2
 }

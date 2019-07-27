@@ -10,6 +10,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import "./styles.css";
 import CardHeader from "@material-ui/core/CardHeader";
 import Avatar from "@material-ui/core/Avatar";
+import Routes from "./Routes.js";
+import AppBarLogin from "./Appbar-login.js";
+import AppBarMain from "./Appbar-main";
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -38,6 +41,7 @@ class Landing extends React.Component {
     const classes = useStyles;
     return (
       <div>
+        <AppBarMain />
         <div className="row1">
           <Card className={classes.card}>
             <CardContent>
