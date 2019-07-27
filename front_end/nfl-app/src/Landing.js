@@ -13,11 +13,15 @@ import Avatar from "@material-ui/core/Avatar";
 import Routes from "./Routes.js";
 import AppBarLogin from "./Appbar-login.js";
 import AppBarMain from "./Appbar-main";
+import MakePicksPic from "./MakePicksPic.jpg";
+import EarnPointsPic from "./EarnPointsPic.jpg";
+import ViewLeaderboardPic from "./ViewLeaderboardPic.jpg";
 
 const useStyles = makeStyles(theme => ({
   card: {
     // minWidth: 275,
     // maxWidth: 300
+    height: 100
   },
   bullet: {
     display: "inline-block",
@@ -42,54 +46,126 @@ class Landing extends React.Component {
     return (
       <div>
         <AppBarMain />
-        <div className="row1">
-          <Card className={classes.card}>
-            <CardContent>
-              <Typography
-                className={classes.title}
-                color="textSecondary"
-                gutterBottom
-              >
-                Word of the Day
-              </Typography>
-
-              <Typography className={classes.pos} color="textSecondary">
-                adjective
-              </Typography>
-              <Typography variant="body2" component="p">
-                well meaning and kindly.
-                <br />
-                {'"a benevolent smile"'}
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <Button size="small">Learn More</Button>
-            </CardActions>
-          </Card>
-
-          <Card className={classes.card}>
-            <CardHeader
-              avatar={
-                <Avatar aria-label="recipe" className={classes.avatar}>
-                  R
-                </Avatar>
-              }
-              title="Shrimp and Chorizo Paella"
-              subheader="September 14, 2016"
-            />
-            <CardMedia
-              className={classes.media}
-              image="/static/images/cards/paella.jpg"
-              title="Paella dish"
-            />
-            <CardContent>
-              <Typography variant="body2" color="textSecondary" component="p">
-                This impressive paella is a perfect party dish and a fun meal to
-                cook together with your guests. Add 1 cup of frozen peas along
-                with the mussels, if you like.
-              </Typography>
-            </CardContent>
-          </Card>
+        <div className="allCards">
+          <div className="row">
+            <div className="individualCard">
+              <Card className={classes.card}>
+                <CardHeader title="Predict this week's NFL matchups" />
+                <CardContent>
+                  <Typography
+                    variant="body"
+                    // color="textSecondary"
+                    component="p"
+                  >
+                    How well do you know the NFL? Find out by putting your
+                    prediction skills to the test. It's simple - just pick which
+                    team you think will win each matchup, then sit back and
+                    watch your predictions come true...or not
+                  </Typography>
+                </CardContent>
+              </Card>
+            </div>
+            <div className="individualCard">
+              <Card className={classes.card}>
+                <CardMedia
+                  style={{ height: "10px", paddingTop: "56%" }}
+                  image={require("./MakePicksPic.jpg")}
+                  title="Paella dish"
+                />
+              </Card>
+            </div>
+          </div>
+          <div className="row">
+            <div className="individualCard">
+              <Card className={classes.card}>
+                <CardHeader
+                  avatar={
+                    <Avatar aria-label="recipe" className={classes.avatar}>
+                      R
+                    </Avatar>
+                  }
+                  title="Shrimp and Chorizo Paella"
+                  subheader="September 14, 2016"
+                />
+                <CardMedia
+                  className={classes.media}
+                  image="/static/images/cards/paella.jpg"
+                  title="Paella dish"
+                />
+                <CardContent>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    This impressive paella is a perfect party dish and a fun
+                    meal to cook together with your guests. Add 1 cup of frozen
+                    peas along with the mussels, if you like.
+                  </Typography>
+                </CardContent>
+              </Card>
+            </div>
+            <div className="individualCard">
+              <Card className={classes.card}>
+                <CardHeader title="Earn points!" />
+                <CardContent>
+                  <Typography variant="body1" component="p">
+                    Earn points for every game you pick correctly! Going with
+                    the heavy favorite won't give you much, but calling the
+                    week's big upset could mean a big reward.
+                  </Typography>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+          <div className="row">
+            <div className="individualCard">
+              <Card className={classes.card}>
+                <CardHeader title="View Leaderboard" />
+                <CardMedia
+                  className={classes.media}
+                  image="/static/images/cards/paella.jpg"
+                  title="Paella dish"
+                />
+                <CardContent>
+                  <Typography variant="body" component="p">
+                    Throughout the season, you can keep tabs on the competition.
+                    Check out who's on a hot streak, and who NOT to take any
+                    advice from...
+                  </Typography>
+                </CardContent>
+              </Card>
+            </div>
+            <div className="individualCard">
+              <Card className={classes.card}>
+                <CardHeader
+                  avatar={
+                    <Avatar aria-label="recipe" className={classes.avatar}>
+                      R
+                    </Avatar>
+                  }
+                  title="Shrimp and Chorizo Paella"
+                  subheader="September 14, 2016"
+                />
+                <CardMedia
+                  className={classes.media}
+                  image="/static/images/cards/paella.jpg"
+                  title="Paella dish"
+                />
+                <CardContent>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    This impressive paella is a perfect party dish and a fun
+                    meal to cook together with your guests. Add 1 cup of frozen
+                    peas along with the mussels, if you like.
+                  </Typography>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
         </div>
       </div>
     );

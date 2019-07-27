@@ -1,8 +1,7 @@
-.row1 {
+.row {
   display: flex;
   flex-direction: row;
-  width: 50%;
-  height: 400px;
+  width: 75%;
 }
 
 .content {
@@ -16,4 +15,17 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 1em;
+}
+
+.allCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1em;
+}
+
+.individualCard {
+  padding: 10px;
+  width: 100%;
+  height: 400px;
 }
