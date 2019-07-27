@@ -3,14 +3,14 @@ import logo from "./logo.svg";
 import "./App.css";
 import Routes from "./Routes.js";
 
-class App extends React.Component {
+class Landing extends React.Component {
   render() {
     return (
       <div>
-        <Routes />
+        <p>test</p>
       </div>
     );
   }
 }
 
-export default App;
+export default Landing;
