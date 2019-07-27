@@ -18,16 +18,6 @@ import EarnPointsPic from "./EarnPointsPic.jpg";
 import ViewLeaderboardPic from "./ViewLeaderboardPic.jpg";
 
 const useStyles = makeStyles(theme => ({
-  card: {
-    // minWidth: 275,
-    // maxWidth: 300
-    height: 100
-  },
-  bullet: {
-    display: "inline-block",
-    margin: "0 2px",
-    transform: "scale(0.8)"
-  },
   title: {
     fontSize: 14
   },
@@ -65,44 +55,24 @@ class Landing extends React.Component {
                 </CardContent>
               </Card>
             </div>
+
             <div className="individualCard">
               <Card className={classes.card}>
                 <CardMedia
                   style={{ height: "10px", paddingTop: "56%" }}
-                  image={require("./MakePicksPic.jpg")}
-                  title="Paella dish"
+                  image={MakePicksPic}
                 />
               </Card>
             </div>
           </div>
+
           <div className="row">
             <div className="individualCard">
               <Card className={classes.card}>
-                <CardHeader
-                  avatar={
-                    <Avatar aria-label="recipe" className={classes.avatar}>
-                      R
-                    </Avatar>
-                  }
-                  title="Shrimp and Chorizo Paella"
-                  subheader="September 14, 2016"
-                />
                 <CardMedia
-                  className={classes.media}
-                  image="/static/images/cards/paella.jpg"
-                  title="Paella dish"
+                  style={{ height: "10px", paddingTop: "56%" }}
+                  image={EarnPointsPic}
                 />
-                <CardContent>
-                  <Typography
-                    variant="body2"
-                    color="textSecondary"
-                    component="p"
-                  >
-                    This impressive paella is a perfect party dish and a fun
-                    meal to cook together with your guests. Add 1 cup of frozen
-                    peas along with the mussels, if you like.
-                  </Typography>
-                </CardContent>
               </Card>
             </div>
             <div className="individualCard">
@@ -138,31 +108,10 @@ class Landing extends React.Component {
             </div>
             <div className="individualCard">
               <Card className={classes.card}>
-                <CardHeader
-                  avatar={
-                    <Avatar aria-label="recipe" className={classes.avatar}>
-                      R
-                    </Avatar>
-                  }
-                  title="Shrimp and Chorizo Paella"
-                  subheader="September 14, 2016"
-                />
                 <CardMedia
-                  className={classes.media}
-                  image="/static/images/cards/paella.jpg"
-                  title="Paella dish"
+                  style={{ height: "10px", paddingTop: "56%" }}
+                  image={ViewLeaderboardPic}
                 />
-                <CardContent>
-                  <Typography
-                    variant="body2"
-                    color="textSecondary"
-                    component="p"
-                  >
-                    This impressive paella is a perfect party dish and a fun
-                    meal to cook together with your guests. Add 1 cup of frozen
-                    peas along with the mussels, if you like.
-                  </Typography>
-                </CardContent>
               </Card>
             </div>
           </div>
